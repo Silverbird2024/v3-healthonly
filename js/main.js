@@ -12,7 +12,12 @@ $App.save006 = localStorage.getItem("save006");
 $App.save007 = localStorage.getItem("save007");
 $App.save008 = localStorage.getItem("save008");
 $App.save009 = localStorage.getItem("save009");
-$App.save010 = localStorage.getItem("save010");};
+$App.save010 = localStorage.getItem("save010");
+$App.yes = localStorage.getItem("hi1H");
+if ($App.hi1h == "yes") {
+$scope.DisableObject("PushButton1",true);
+} else {
+};};
 angular.element(document).ready( function(){
 $scope.__init();
 neo = angular.element(document.getElementById("ng-view")).scope();neo.Refresh();});
@@ -48,7 +53,9 @@ localStorage.setItem("lru1",$App.lru);
 localStorage.setItem("aru1",$App.aru);
 localStorage.setItem("alu1",$App.alu);
 localStorage.setItem("bs1",$App.bs);
-localStorage.setItem("bp1",$App.bp);};
+localStorage.setItem("bp1",$App.bp);
+localStorage.setItem("hi1H",$App.yes);
+$scope.DisableObject("PushButton1",true);};
 $scope.PushButton2_click = function() {$App.recall = "1";
 $App.recall2 = $App.save001;
 $App.save001 = localStorage.getItem("save001");
@@ -368,6 +375,7 @@ $App.alu = localStorage.getItem("alu10");
 $App.bp = localStorage.getItem("bp10");
 $App.bs = localStorage.getItem("bs10");};
 $scope.PushButton42_click = function() {window.document.location.reload();};
+$scope.PushButton43_click = function() {$scope.DisableObject("PushButton1",false);};
 });
 NeoApp.controller("Page2_Ctrl", function($scope,$rootScope,$route,$timeout,$filter,$window,$animate) {
 $App.NAB.PageNumber = 2;

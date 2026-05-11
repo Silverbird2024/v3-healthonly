@@ -91,6 +91,8 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #PushButton41:hover {color:red}
 #PushButton42 {position:absolute;left:293px;top:3px;width:68px;height:32px;margin:0;color:green;font-size:8pt}
 #PushButton42:hover {color:red}
+#PushButton43 {position:absolute;left:98px;top:743px;width:166px;height:30px;margin:0;color:yellow;font-size:8pt;background-color:#062700}
+#PushButton43:hover {color:blue}
 #Page2 {position:relative;width:100%;height:100%;overflow:auto;;background-color:#00FF7F}
 #Container4 {position:absolute;left:15px;top:132px;width:230px;height:351px;margin:0;border-width:1px;border-style:solid;background-color:#fff;;overflow-x:hidden;overflow-y:hidden}
 #Image1 {position:absolute;left:2px;top:1px;width:224px;height:346px;margin:0;}
